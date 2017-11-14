@@ -8,4 +8,8 @@ angular.module('myApp').controller('friendCtrl', function($scope) {
     property: 'name',
     direction: '+'
   }
+  $scope.options = {
+    friendDetails: [{ value: 'name', display: 'Name' }, { value: 'friend_count', display: '#Friends' }, { value: 'location.city', display: 'City' }, { value: 'location.state', display: 'State' }, { value: 'location.country', display: 'Country' }],
+    order: [{ value: '+', display: 'Ascending' }, { value: '-', display: 'Descending' }]
+  }
 });
